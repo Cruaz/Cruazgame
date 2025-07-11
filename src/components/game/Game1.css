@@ -1,0 +1,95 @@
+.game1 {
+  font-family: Arial, sans-serif;
+  background-color: #041955;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: bold;
+  text-align: center;
+  color: #fefefe;
+  
+  margin-top: 2rem;
+  line-height: 1.3;
+}
+
+.game1 button {
+  margin: 5px;
+  margin-bottom: 45px;
+  padding: 10px 20px;
+  background-color: #37e2d5;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.game1 button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.game1 button:hover:not(:disabled) {
+  background-color: #24b3a5;
+}
+
+.game1 p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.game1 .dealer,
+.game1 .player {
+  margin-top: 20px;
+}
+
+.game1 span {
+  font-size: 18px;
+}
+
+.dealer {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  gap: 15px; /* Jarak antar elemen */
+  align-items: center; /* Agar elemen sejajar secara vertikal */
+  justify-content: center; /* Jika ingin elemen terpusat secara horizontal */
+}
+
+.player {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  gap: 15px; /* Jarak antar elemen */
+  margin-bottom: 20px;
+  align-items: center; /* Agar elemen sejajar secara vertikal */
+  justify-content: center; /* Jika ingin elemen terpusat secara horizontal */
+}
+
+.notification p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.dealer-win {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+
+.player-win {
+  background: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+}
+
+.tie {
+  background-color: #ffa500; /* Warna oranye */
+  color: black;
+}
